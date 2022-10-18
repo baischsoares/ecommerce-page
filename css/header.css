@@ -10,6 +10,10 @@ header {
   display: flex;
 }
 
+#BtnMobile{
+  display: none;
+}
+
 .menuLinks{
 display: flex;
 gap: 2rem;
@@ -48,4 +52,83 @@ color: var(--corAzulEscuro);
   width: 50px;
   border-radius: 50%;
   box-sizing: border-box;
+}
+
+.menuPaginasMobile{
+  display: none;
+}
+
+
+@media(max-width: 750px){
+  .headerMenu{
+    gap: 15px;
+  }
+  #BtnMobile{
+    display: flex;
+    align-self: end;
+ }
+  #hamburguer{
+    background-color: white;
+    display: block;
+    width: 20px;
+    border-top: 3px solid;
+    color: #69707D;
+  }
+  #hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: currentColor;
+    margin-top: 5px;
+  }
+  .menuPaginas{
+    display: none;
+  } 
+  .linksPerfil{
+    gap: 25px;
+  }
+
+  .menuPaginasMobile.ativo{
+    display: block;
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    width: 60%;
+    height: 100vh;
+    padding: 50px 0px 0px 20px;
+  }
+  
+  .menuPaginasMobile li{
+  margin-bottom: 40px;
+  }
+  
+  .menuPaginasMobile li a{
+    font-weight: 700;
+    color: var(--corAzulEscuro);
+  }
+  
+  #fecharMenu{
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  
+  #fecharMenu::after, #fecharMenu::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: currentColor;
+    margin-top: 5px;
+    position: relative;
+  }
+  
+  #fecharMenu::after{
+    transform: rotate(45deg);
+    top: -8px;
+  }
+  #fecharMenu::before{
+    transform: rotate(-45deg);
+  }
 }

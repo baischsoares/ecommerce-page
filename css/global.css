@@ -59,9 +59,17 @@ body, ul, h1,h2, h3, h4, button, p{
   font-family: 'Kumbh Sans', 'Arial', sans-serif;
 }
 
+.container{
+  padding: 0px 10px;
+}
+
+button{
+  background: #fff;
+}
+
 img{
   max-width: 100%;
-  object-fit: contain;
+  
 }
 
 ul{

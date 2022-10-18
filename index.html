@@ -28,7 +28,10 @@
 <body>
   <section class="container">
     <header>
-      <div class="headerMenu">
+      <nav class="headerMenu">
+        <button id="BtnMobile">
+          <span id="hamburguer"></span>
+        </button>
         <img class="logo" src="./images/logo.svg" alt="">
         <ul class="menuLinks menuPaginas">
           <li><a href="">Collections</a></li>
@@ -37,7 +40,15 @@
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
         </ul>
-      </div>
+        <ul class="menuPaginasMobile">
+          <span id="fecharMenu"></span>
+          <li><a href="">Collections</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
       <div class="headerMenu">
         <ul class="menuLinks linksPerfil">
           <li><a href=""><img src="./images/icon-cart.svg" alt=""></a></li>
@@ -70,6 +81,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>

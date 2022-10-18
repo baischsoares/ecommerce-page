@@ -1,0 +1,80 @@
+
+:root {
+  font-size: 16px;
+  --corPrimaria: hsl(26, 100%, 55%);
+  --primariaHover: #FFAB6A;
+  --corAzulEscuro: #1D2026;
+  --corCinza: #69707D;
+  --branco: #fff;
+}
+
+.corPrimaria{
+  color: var(--corPrimaria);
+}
+.primariaHover{
+  color: var(--primariaHover);
+}
+.corAzulEscuro{
+  color: var(--corAzulEscuro);
+}
+.corCinza{
+  color: var(--corCinza);
+}
+.branco{
+  color: var(--branco);
+}
+
+.tituloProduto{
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2,75rem;
+  line-height: 3rem;
+  color: var(--corAzulEscuro)
+}
+
+.descricaoProduto{
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--corCinza)
+}
+
+.preco{
+  font-weight: 700;
+  font-size: 1,75rem;
+  line-height: 2rem;
+  color: var(--corAzulEscuro)
+}
+
+body, ul, h1,h2, h3, h4, button, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: 'Kumbh Sans', 'Arial', sans-serif;
+}
+
+img{
+  max-width: 100%;
+  object-fit: contain;
+}
+
+ul{
+  list-style: none;
+}
+li{
+  align-self: center
+}
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}

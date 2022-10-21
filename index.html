@@ -52,11 +52,25 @@
       </nav>
       <div class="headerMenu">
         <ul class="menuLinks linksPerfil">
-          <li><a href=""><img src="./images/icon-cart-header.svg" alt=""></a></li>
+          <li><a href="" data-car><img src="./images/icon-cart-header.svg" alt=""></a></li>
           <li><a href=""><img class="perfilImg" src="./images/profile.png" alt=""></a></li>
         </ul>
       </div>
     </header>
+
+    <section class="modal-carrinho">
+      <h3 class="tituloCarrinho">CART</h3>
+      <div class="produtosCarrinho">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        <div class="descricaoCompra">
+          <p>Fall Limited Edition Sneakers</p>
+          <span data-precoCarrinho>$125.00 x</span><span data-quantidadeCarrinho>3</span><span data-precoFinalCarrinho>
+            $370.00</span>
+        </div>
+        <img src="./images/icon-delete.svg" style="height:20px" alt="">
+      </div>
+      <button data-checkout class="checkout">Chekout</button>
+    </section>
 
     <main>
 
@@ -70,8 +84,8 @@
         <div class="imgPrincipal">
           <ul class="listaImgPrincipal">
             <div class="btnsMobile">
-              <button class="prev" data-btnMobile data-prev><img  src="./images/icon-previous.svg" alt=""></button>
-              <button class="next" data-btnMobile data-next><img  src="./images/icon-next.svg" alt=""></button>
+              <button class="prev" data-btnMobile data-prev><img src="./images/icon-previous.svg" alt=""></button>
+              <button class="next" data-btnMobile data-next><img src="./images/icon-next.svg" alt=""></button>
             </div>
             <li><img src="./images/image-product-1.jpg" alt="" class="imgProduto ativo"></li>
             <li><img src="./images/image-product-2.jpg" alt="" class="imgProduto"></li>
@@ -86,8 +100,8 @@
           <li><img src="./images/image-product-3-thumbnail.jpg" class="thumbImg " alt=""></li>
           <li><img src="./images/image-product-4-thumbnail.jpg" class="thumbImg " alt=""></li>
         </ul>
-
       </div>
+
       <div class="produtoInfo">
         <span class="produtoEmpresa corPrimaria">Sneaker Company</span>
         <h1 class="produtoTitulo tituloProduto">Fall Limited Edition Sneakers</h1>
@@ -113,13 +127,15 @@
       </div>
     </main>
 
-  </section>
 
+  </section>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
   <script type="module" src="./script.js"></script>
 </body>
 

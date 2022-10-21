@@ -1,14 +1,3 @@
-const btnMobile = document.getElementById('BtnMobile')
-const btnFechar = document.getElementById('fecharMenu')
-const menuMobile = document.querySelector('.menuPaginasMobile')
+import initMobileMenu from "./module/initMobileMenu.js";
 
-function openMenu(){
-menuMobile.classList.add('ativo')
-}
-
-function closeMenu(){
-  menuMobile.classList.remove('ativo')
-  }
-
-btnMobile.addEventListener('click', openMenu)
-btnFechar.addEventListener('click', closeMenu)
+initMobileMenu()

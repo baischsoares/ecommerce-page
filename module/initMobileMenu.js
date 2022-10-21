@@ -14,6 +14,4 @@ export default function initMobileMenu(){
   
   btnMobile.addEventListener('click', openMenu)
   btnFechar.addEventListener('click', closeMenu)
-  
-  console.log('teste')
 }

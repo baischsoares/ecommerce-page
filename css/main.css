@@ -18,6 +18,27 @@
   display: block;
 }
 
+.listaImgPrincipal{
+  position: relative;
+}
+
+.btnsMobile{
+  position: absolute;
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  margin-top: 115px;
+}
+.btnsMobile button{
+  padding: 15px 17px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .imgMenu{
   display: flex;
   gap: 30px;
@@ -51,7 +72,7 @@
   text-transform: uppercase;
   letter-spacing: .125rem;
 }
-.secaoPreco{
+.precoDesconto{
   display: grid;
   grid-template-columns: 100px 100px;
   gap: 3px 15px ;
@@ -71,6 +92,7 @@
   text-decoration: line-through;
   font-weight: 700;
   color: #B6BCC8;
+  display: block;
 }
 
 .quantidade{
@@ -124,4 +146,39 @@ display: flex;
 
 .comprar:hover{
   background-color: var(--primariaHover);
+}
+
+@media (max-width: 500px){
+  .produto{
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 0px
+  }
+  .imgProduto{
+    max-height: 300px;
+    border-radius: 0px;
+  }
+.imgMenu{
+  display: none;
+}
+
+.secaoPreco{
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.opcoesCompra{
+  display: grid;
+}
+.quantidade{
+  height: 60px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #F6F8FD;
+  justify-content: space-between;
+}
+.comprar{
+  justify-content: center;
+}
 }

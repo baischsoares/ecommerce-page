@@ -68,25 +68,23 @@
     <main class="produto">
       <div class="produtoImagens">
         <div class="imgPrincipal">
-          <ul>
+          <ul class="listaImgPrincipal">
+            <div class="btnsMobile">
+              <button><img src="./images/icon-previous.svg" alt=""></button> 
+              <button><img src="./images/icon-next.svg" alt=""></button>             
+             </div>
             <li><img src="./images/image-product-1.jpg" alt="" class="imgProduto ativo"></li>
-          </ul>
-          <ul>
             <li><img src="./images/image-product-2.jpg" alt="" class="imgProduto"></li>
-          </ul>
-          <ul>
             <li><img src="./images/image-product-3.jpg" alt="" class="imgProduto"></li>
-          </ul>
-          <ul>
             <li><img src="./images/image-product-4.jpg" alt="" class="imgProduto"></li>
           </ul>
         </div>
 
         <ul class="imgMenu">
-          <li><img src="./images/image-product-1-thumbnail.jpg" class="thumbAtivo" alt=""></li>
-          <li><img src="./images/image-product-2-thumbnail.jpg" alt=""></li>
-          <li><img src="./images/image-product-3-thumbnail.jpg" alt=""></li>
-          <li><img src="./images/image-product-4-thumbnail.jpg" alt=""></li>
+          <li><img src="./images/image-product-1-thumbnail.jpg" class="thumbImg thumbAtivo" alt=""></li>
+          <li><img src="./images/image-product-2-thumbnail.jpg" class="thumbImg "alt=""></li>
+          <li><img src="./images/image-product-3-thumbnail.jpg" class="thumbImg "alt=""></li>
+          <li><img src="./images/image-product-4-thumbnail.jpg" class="thumbImg "alt=""></li>
         </ul>
 
       </div>
@@ -97,8 +95,10 @@
           Featuring a
           durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
         <div class="secaoPreco">
-          <h2 class="precoFinal preco">$125.00</h2>
-          <span class="desconto corPrimaria">50%</span>
+          <div class="precoDesconto">
+            <h2 class="precoFinal preco">$125.00</h2>
+            <span class="desconto corPrimaria">50%</span>
+          </div>
           <span class="precoInicial ">$250.00</span>
         </div>
         <div class="opcoesCompra">
@@ -115,14 +115,6 @@
 
   </section>
 
-
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

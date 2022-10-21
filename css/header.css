@@ -60,6 +60,9 @@ color: var(--corAzulEscuro);
 
 
 @media(max-width: 750px){
+  .menuPaginas{
+    display: none;
+  }
   .headerMenu{
     gap: 15px;
   }
@@ -82,9 +85,6 @@ color: var(--corAzulEscuro);
     background-color: currentColor;
     margin-top: 5px;
   }
-  .menuPaginas{
-    display: none;
-  } 
   .linksPerfil{
     gap: 25px;
   }
@@ -98,6 +98,7 @@ color: var(--corAzulEscuro);
     width: 60%;
     height: 100vh;
     padding: 50px 0px 0px 20px;
+    z-index: 9999;
   }
   
   .menuPaginasMobile li{

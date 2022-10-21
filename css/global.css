@@ -28,7 +28,7 @@
   font-family: 'Kumbh Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 2,75rem;
+  font-size: 2.75rem;
   line-height: 3rem;
   color: var(--corAzulEscuro)
 }
@@ -44,7 +44,7 @@
 
 .preco{
   font-weight: 700;
-  font-size: 1,75rem;
+  font-size: 1.75rem;
   line-height: 2rem;
   color: var(--corAzulEscuro)
 }

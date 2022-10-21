@@ -25,7 +25,7 @@
 .btnsMobile{
   position: absolute;
   width: 100%;
-  display: flex !important;
+  display: none;
   justify-content: space-between;
   margin-top: 115px;
 }
@@ -167,7 +167,6 @@ display: flex;
  justify-content: space-between;
  align-items: center;
 }
-
 .opcoesCompra{
   display: grid;
 }
@@ -180,5 +179,8 @@ display: flex;
 }
 .comprar{
   justify-content: center;
+}
+.btnsMobile{
+  display: flex;
 }
 }

@@ -1,0 +1,127 @@
+.produto{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.imgProduto{
+  width: 445px;
+  height: 445px;
+  border-radius: 10px;
+  display: none;
+  margin-bottom: 30px;
+}
+
+.imgProduto.ativo{
+  display: block;
+}
+
+.imgMenu{
+  display: flex;
+  gap: 30px;
+}
+
+.imgMenu li img{
+  width: 88px;
+  height: 88px;
+  border-radius: 10px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.imgMenu li img:hover{
+  width: 88px;
+  height: 88px;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+
+.imgMenu li img.thumbAtivo{
+  opacity: 0.6;
+}
+
+.produtoInfo{
+  display: grid;
+  gap: 30px;
+}
+.produtoEmpresa{
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+}
+.secaoPreco{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap: 3px 15px ;
+}
+.desconto{
+  color: var(--corPrimaria);
+  background-color: #FFEEE2;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+  align-self: flex-start;
+  justify-self: self-start;
+  padding: 4px 8px;
+}
+.precoInicial{
+  text-decoration: line-through;
+  font-weight: 700;
+  color: #B6BCC8;
+}
+
+.quantidade{
+display: flex;
+}
+
+[data-diminuirQtde], [data-aumentarQtde] {
+  background-color:#F6F8FD;
+  padding: 15px 20px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  align-content: center;
+  display: grid;
+  cursor: pointer;
+  
+}
+[data-diminuirQtde]{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+[data-aumentarQtde]{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+[data-quantidade]{
+  padding: 0px 10px;
+  margin: 0;
+  font-weight: 700;
+  background-color:#F6F8FD;
+}
+
+.opcoesCompra{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.comprar{
+  padding: 15px 75px;
+  background-color: var(--corPrimaria);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.comprar:hover{
+  background-color: var(--primariaHover);
+}

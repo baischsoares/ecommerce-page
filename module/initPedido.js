@@ -21,8 +21,10 @@ export default function initPedido(){
   }
   btnRemove.addEventListener('click', remove)
   function remove(){
-    produto.quantidade -= 1
-    setarQuantidade()
+    if(produto.quantidade > 0){
+      produto.quantidade -= 1
+      setarQuantidade()
+    }
   }
   function setarQuantidade(){
     document.querySelector(' [data-quantidade]').innerText = produto.quantidade;
@@ -33,13 +35,16 @@ export default function initPedido(){
   btnCart.addEventListener('click', setarCarrinho)
   
   function setarCarrinho(){
+    const qtde = +document.querySelector(' [data-quantidade]').innerText
     const carrinhoVerificar = document.querySelector('.produtosCarrinho')
-    if(carrinhoVerificar){
-      carrinhoVerificar.remove()
-      criarCarrinho()
-    } else {
-      criarCarrinho()
-      alertaCarrinho()
+    if(qtde > 0){
+      if(carrinhoVerificar){
+        carrinhoVerificar.remove()
+        criarCarrinho()
+      } else {
+        criarCarrinho()
+        alertaCarrinho()
+      }
     }
   }
 
@@ -77,7 +82,6 @@ export default function initPedido(){
     const modalCarrinho = document.querySelector('.modal-carrinho')
     modalCarrinho.insertAdjacentElement('afterbegin', div)
   }
-
 
   function alertaCarrinho(){
     const carrinho = document.querySelector('[data-car]')

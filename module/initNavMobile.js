@@ -9,7 +9,6 @@ class NavNext {
     }
 
     trocarImagem(e){
-
       const ultimaImagem = this.imagens[this.imagens.length - 1];
       const imgAtiva = document.querySelector('.ativo');
       const imgArray = Array.from(this.imagens);
